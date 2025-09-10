@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mithun's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-semibold text-indigo-400 hover:text-indigo-500 transition">Mithun</a>
+      <ul class="hidden md:flex space-x-8 text-gray-300 font-medium">
+        <li><a href="#home" class="hover:text-indigo-400 transition">Home</a></li>
+        <li><a href="#core-interests" class="hover:text-indigo-400 transition">Core Interests</a></li>
+        <li><a href="#projects" class="hover:text-indigo-400 transition">Project Ideas</a></li>
+        <li><a href="#skills" class="hover:text-indigo-400 transition">Technical Skills</a></li>
+        <li><a href="#traits" class="hover:text-indigo-400 transition">Personal Traits</a></li>
+        <li><a href="#other-info" class="hover:text-indigo-400 transition">Other Info</a></li>
+      </ul>
+      <button id="nav-toggle" aria-label="Toggle menu" class="md:hidden text-indigo-400 focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-gray-800 border-t border-gray-700 hidden">
+      <ul class="flex flex-col space-y-2 px-6 py-4 text-gray-300 font-medium">
+        <li><a href="#home" class="block hover:text-indigo-400 transition">Home</a></li>
+        <li><a href="#core-interests" class="block hover:text-indigo-400 transition">Core Interests</a></li>
+        <li><a href="#projects" class="block hover:text-indigo-400 transition">Project Ideas</a></li>
+        <li><a href="#skills" class="block hover:text-indigo-400 transition">Technical Skills</a></li>
+        <li><a href="#traits" class="block hover:text-indigo-400 transition">Personal Traits</a></li>
+        <li><a href="#other-info" class="block hover:text-indigo-400 transition">Other Info</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-20">
+
+    <!-- Home / Introduction -->
+    <section id="home" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-400 mb-6">Hi, I'm Mithun</h1>
+      <p class="text-lg md:text-xl leading-relaxed max-w-3xl">
+        Mithun is a highly motivated learner with a strong interest in cybersecurity, digital forensics, and software development.
+        He is passionate about exploring both software and hardware domains, combining programming skills with IoT-based innovations.
+        With a disciplined mindset and a continuous drive for improvement, Mithun focuses on building structured knowledge,
+        developing technical ideas, and applying them to real-world scenarios.
+      </p>
+    </section>
+
+    <!-- Core Interests / Domains -->
+    <section id="core-interests" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Core Interests & Domains</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg max-w-3xl">
+        <li>Cybersecurity &amp; Ethical Hacking</li>
+        <li>Digital Forensics</li>
+        <li>Software Development (Java, Python, C/C++)</li>
+        <li>Data Structures &amp; Algorithms</li>
+        <li>Hardware &amp; IoT (ESP32-CAM, embedded systems)</li>
+        <li>Public Speaking (Tamil &amp; English)</li>
+        <li>Reading &amp; Continuous Learning</li>
+      </ul>
+    </section>
+
+    <!-- Project Ideas -->
+    <section id="projects" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Project Ideas</h2>
+      <div class="space-y-6 max-w-3xl text-lg">
+        <article>
+          <h3 class="font-semibold text-indigo-300 mb-1">Student Job Platform</h3>
+          <p>Connecting students with part-time job opportunities.</p>
+        </article>
+        <article>
+          <h3 class="font-semibold text-indigo-300 mb-1">Anti-cheating System</h3>
+          <p>Using ESP32-CAM &amp; Python for facial expression monitoring during exams.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Technical Skills</h2>
+      <div class="max-w-3xl space-y-4 text-lg">
+        <div>
+          <h3 class="font-semibold text-indigo-300">Programming Languages:</h3>
+          <p>Java, Python, C/C++</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-indigo-300">Development Areas:</h3>
+          <p>Backend, Interfaces, Data Handling</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-indigo-300">Cybersecurity Focus:</h3>
+          <p>Threat analysis, forensics fundamentals</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-indigo-300">Hardware:</h3>
+          <p>ESP32, IoT-based implementations</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Traits -->
+    <section id="traits" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Personal Traits</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg max-w-3xl">
+        <li>Curious &amp; adaptive learner</li>
+        <li>Focused on self-improvement &amp; discipline</li>
+        <li>Comfortable working both in teams and independently</li>
+        <li>Prefers structured, step-by-step learning approaches</li>
+      </ul>
+    </section>
+
+    <!-- Other Info -->
+    <section id="other-info" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Other Info</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg max-w-3xl">
+        <li><strong>Location:</strong> India</li>
+        <li><strong>Communication Style:</strong> Professional, clear, and organized</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 border-t border-gray-700 mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+      <p>© 2025 Mithun. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <!-- Social media placeholders -->
+        <a href="www.linkedin.com/in/mithun-r-986983316" aria-label="LinkedIn" class="hover:text-indigo-400 transition" title="LinkedIn">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/mithunr03" aria-label="GitHub" class="hover:text-indigo-400 transition" title="GitHub">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.726-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.1.823 2.22v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Animate sections on scroll (fadeInUp)
+    const sections = document.querySelectorAll('section');
+
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-5');
+          entry.target.classList.add('animate-fadeInUp');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
